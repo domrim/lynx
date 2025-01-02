@@ -1,4 +1,7 @@
-#!bin/bash
+#!/usr/bin/env bash
+set -x
+
+docker_exec="docker run --rm -it -v ./:/lynx -w /lynx docker.io/library/node:22 /bin/bash -c"
 
 # get current branch
 branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
@@ -7,7 +10,7 @@ branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
 git push
 
 # run a build to catch any uncommitted updates
-npm run build
+$docker_exec "npm run build"
 
 # branch validation
 if [ $branch = "dev" ]; then
@@ -26,10 +29,10 @@ if [ $branch = "dev" ]; then
 
 		# update changelog
 		chan release $version || exit
-		npx prettier --write CHANGELOG.md
+        $docker_exec "npx prettier --write CHANGELOG.md"
 
 		# build project
-		npm run build
+        $docker_exec "npm run build"
 
 		# commit version updates
 		git commit -a -m "🔨 Preparing release v$version"
