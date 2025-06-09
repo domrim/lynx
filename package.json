@@ -1,6 +1,6 @@
 {
   "name": "hugo-lynx-theme",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Lynx theme for Hugo",
   "scripts": {
     "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpanther/lynx.git"
+    "url": "git+https://github.com/domrim/lynx.git"
   },
   "keywords": [
     "hugo",
@@ -21,9 +21,9 @@
   "author": "James Panther",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jpanther/lynx/issues"
+    "url": "https://github.com/domrim/lynx/issues"
   },
-  "homepage": "https://github.com/jpanther/lynx#readme",
+  "homepage": "https://github.com/domrim/lynx#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.11",
     "prettier": "^3.2.5",
