@@ -7,11 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.1] - 2025-06-09
+
+### Changed
+
+- Fixed Author param block changes from 1.4.0
+- Changed all references from old repo to new home under domrim/lynx
+
 ## [1.4.0] - 2024-05-01
 
 ### Added
 
-- Support for Bandcamp, Blueksy, Spotify and Threads
+- Support for Bandcamp, Bluesky, Spotify and Threads
 - Support for X (Twitter) ([#107](https://github.com/jpanther/lynx/pull/107))
 
 ### Changed
@@ -113,14 +120,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fathom Analytics and Google Analytics support
 - Favicons support
 
-[Unreleased]: https://github.com/jpanther/lynx/compare/v1.4.0...HEAD
-[1.4.0]: https://github.com/jpanther/lynx/compare/v1.3.1...v1.4.0
-[1.3.1]: https://github.com/jpanther/lynx/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/jpanther/lynx/compare/v1.2.4...v1.3.0
-[1.2.4]: https://github.com/jpanther/lynx/compare/v1.2.3...v1.2.4
-[1.2.3]: https://github.com/jpanther/lynx/compare/v1.2.2...v1.2.3
-[1.2.2]: https://github.com/jpanther/lynx/compare/v1.2.1...v1.2.2
-[1.2.1]: https://github.com/jpanther/lynx/compare/v1.2.0...v1.2.1
-[1.2.0]: https://github.com/jpanther/lynx/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/jpanther/lynx/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/jpanther/lynx/releases/tags/v1.0.0
+[Unreleased]: https://github.com/domrim/lynx/compare/v1.4.1...HEAD
+[1.4.1]: https://github.com/domrim/lynx/compare/v1.4.0...v1.4.1
+[1.4.0]: https://github.com/domrim/lynx/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/domrim/lynx/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/domrim/lynx/compare/v1.2.4...v1.3.0
+[1.2.4]: https://github.com/domrim/lynx/compare/v1.2.3...v1.2.4
+[1.2.3]: https://github.com/domrim/lynx/compare/v1.2.2...v1.2.3
+[1.2.2]: https://github.com/domrim/lynx/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/domrim/lynx/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/domrim/lynx/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/domrim/lynx/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/domrim/lynx/releases/tags/v1.0.0
