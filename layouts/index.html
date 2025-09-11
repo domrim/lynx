@@ -10,7 +10,11 @@
           {{ $resource = resources.Get $src }}
         {{ end }}
         {{ with $resource }}
-          {{ $src = (.Fill "288x288").RelPermalink }}
+          {{ if eq .MediaType.SubType "svg" }}
+            {{ $src = .RelPermalink }}
+          {{ else }}
+            {{ $src = (.Fill "288x288").RelPermalink }}
+          {{ end }}
         {{ end }}
         <img
           class="mb-2 h-36 w-36 rounded-full"
